@@ -91,6 +91,7 @@ body {
 .project-link:hover {
     color: #f85a21;
     text-decoration: underline;
+    font-size: 16px;
 }
 .project-bracket {
     font-style: normal;
@@ -210,6 +211,11 @@ border-top: 2px solid black;
 }
 
  /* Contact section */
+ .contact_list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+ }
 .contact-section-type{
     font-style: normal;
     font-weight: 700;
@@ -230,15 +236,17 @@ border-top: 2px solid black;
 .contact-section-link:hover {
     color: #FB6D3A;
     text-decoration: underline;
+
 }
 /* tech skill section */
 .tech-skill-list {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
     padding: 0 0 0 17px;
+
 }
-.tech-skill-active {
-display: block;
-}
+
 .tech-skill-item {
     color: #FB6D3A;
 }
@@ -251,6 +259,9 @@ display: block;
  }
  /* soft skill section */
  .soft-skill-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
     padding: 0 0 0 17px;
  }
  .soft-skill-item {
@@ -269,10 +280,16 @@ display: block;
  }
  .image img {
     border-radius: 20px;
-    box-shadow: 6px 6px 20px rgba(228, 228, 228, 0.5);
-    border: 1px solid rgb(177, 176, 176);
+    box-shadow: 3px 3px 20px rgba(228, 228, 228, 0.2);
     transition: 0.2s ease;
      }
  .image img:hover {
     transform: scale(1.1);
  }
+
+ /* Acordion */
+
+ .active_acordion {
+    max-height: 300px;
+    transition: max-height 0.4s ease-in;
+}
