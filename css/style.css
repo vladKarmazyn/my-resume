@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #F5F7FA;
@@ -6,13 +9,15 @@ body {
 .main-container {
     display: flex;
     flex-direction: row-reverse;
-    width: 1100px;
+    flex-wrap: wrap;
+    max-width: 1107px;
     border: 1px solid rgb(212, 210, 210);
     margin: 0 auto;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
     }
 .main-content-section {
     background-color: #fff;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
+   
     padding: 105px 120px 105px 90px;
    }
 
@@ -81,9 +86,11 @@ body {
 .project-link {
     margin-left: 10px;
     text-decoration: none;
+    transition: 0.2s ease;
 }
 .project-link:hover {
     color: #f85a21;
+    text-decoration: underline;
 }
 .project-bracket {
     font-style: normal;
@@ -147,11 +154,7 @@ border-top: 2px solid black;
 
 }
 .title-education {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    color: #000000;
+    
     margin-bottom: 10px;
 }
 .university {
@@ -203,6 +206,7 @@ border-top: 2px solid black;
     line-height: 27px;
     color: #fff;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
  /* Contact section */
@@ -221,13 +225,19 @@ border-top: 2px solid black;
     line-height: 24px;
     color: #49525F;
     text-decoration: none;
+    transition: 0.2s ease;
 }
 .contact-section-link:hover {
     color: #FB6D3A;
+    text-decoration: underline;
 }
 /* tech skill section */
 .tech-skill-list {
-padding: 0 0 0 17px;
+    display: none;
+    padding: 0 0 0 17px;
+}
+.tech-skill-active {
+display: block;
 }
 .tech-skill-item {
     color: #FB6D3A;
@@ -254,10 +264,15 @@ padding: 0 0 0 17px;
     color: #fff;
  }
  .image {
+    display: flex;
+    justify-content: center;
+ }
+ .image img {
     border-radius: 20px;
     box-shadow: 6px 6px 20px rgba(228, 228, 228, 0.5);
     border: 1px solid rgb(177, 176, 176);
+    transition: 0.2s ease;
      }
- .image:hover {
+ .image img:hover {
     transform: scale(1.1);
  }
