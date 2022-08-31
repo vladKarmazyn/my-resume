@@ -9,8 +9,8 @@ body {
 .main-container {
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
-    max-width: 1107px;
+    flex-wrap: wrap-reverse;
+    max-width: 1103px;
     border: 1px solid rgb(212, 210, 210);
     margin: 0 auto;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
@@ -49,7 +49,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #595959;
-    width: 400px;
+    max-width: 400px;
 
 
 }
@@ -64,10 +64,14 @@ body {
     font-size: 22px;
     line-height: 27px;
     color: black;
+    cursor: pointer;
 }
 .project-list {
     margin: 0;
     padding-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
 }
 .project-item {
     font-style: normal;
@@ -101,9 +105,14 @@ body {
     color: #000000;
 }
 .work-expirience{
-width: 525px;
-margin-bottom: 45px;
-border-top: 2px solid black;
+    max-width: 525px;
+    margin-bottom: 45px;
+    border-top: 2px solid black;
+}
+.work {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
 }
 .position {
     font-style: normal;
@@ -112,6 +121,7 @@ border-top: 2px solid black;
     line-height: 20px;
     color: #000000;
     margin-bottom: 10px;
+    cursor: pointer;
 
 }
 .organization {
@@ -139,6 +149,9 @@ border-top: 2px solid black;
 .work-list {
     padding: 0;
     margin-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
 }
 .work-list-item {
     font-style: normal;
@@ -186,6 +199,11 @@ border-top: 2px solid black;
     margin-bottom: 10px;
     margin-top: 0;
 }
+.education_acordion {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
     /* Sidebar section */
 
 .sidebar-section {
@@ -208,7 +226,9 @@ border-top: 2px solid black;
     color: #fff;
     margin-bottom: 10px;
     cursor: pointer;
+  
 }
+
 
  /* Contact section */
  .contact_list {
@@ -288,8 +308,67 @@ border-top: 2px solid black;
  }
 
  /* Acordion */
-
- .active_acordion {
-    max-height: 300px;
+ .arrow {
+    margin-left: 10px;
+    
+ }
+.arrow img {
+    transition: 0.4s ease-in-out;
+    vertical-align: middle;
+}
+ 
+.active_arrow img {
+    transform: rotate(-180deg);
+    transition: 0.4s ease-in-out;
+}
+.arrow_black {
+    margin-left: 10px;
+    
+}
+.arrow_black img {
+    transition: 0.4s ease-in-out;
+    vertical-align: middle;
+}
+.arrow_orange {
+    margin-left: 10px;
+}
+.arrow_orange img {
+    transition: 0.4s ease-in-out;
+    vertical-align: middle;
+}
+.active_acordion {
+    max-height: 600px;
     transition: max-height 0.4s ease-in;
+}
+/* Media */
+
+@media(max-width:1122px) {
+    .sidebar-section {
+        width: 100%;
+    }
+    .tech-skill-section, .soft-skill-section, .contact-section {
+        text-align: center;
+        margin-left: auto;
+    }
+    .main-content-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 30px 20px 20px 30px;
+        text-align: center;
+    }
+    .tech-skill-list, .soft-skill-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .sidebar-title {
+        display: inline-block;
+    }
+    .sidebar-title::after {
+        right: -40%;
+    }
+    .about-descriptions {
+        text-align: center;
+    }
 }
