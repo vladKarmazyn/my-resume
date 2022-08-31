@@ -71,7 +71,7 @@ body {
     padding-left: 15px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 1s ease-in-out;
 }
 .project-item {
     font-style: normal;
@@ -112,7 +112,7 @@ body {
 .work {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 1s ease-in-out;
 }
 .position {
     font-style: normal;
@@ -151,7 +151,7 @@ body {
     margin-left: 15px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 1s ease-in-out;
 }
 .work-list-item {
     font-style: normal;
@@ -202,7 +202,7 @@ body {
 .education_acordion {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 1s ease-in-out;
 }
     /* Sidebar section */
 
@@ -234,7 +234,7 @@ body {
  .contact_list {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 1s ease-in-out;
  }
 .contact-section-type{
     font-style: normal;
@@ -262,7 +262,7 @@ body {
 .tech-skill-list {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 1s ease-in-out;
     padding: 0 0 0 17px;
 
 }
@@ -281,7 +281,7 @@ body {
  .soft-skill-list {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 1s ease-in-out;
     padding: 0 0 0 17px;
  }
  .soft-skill-item {
@@ -313,32 +313,32 @@ body {
     
  }
 .arrow img {
-    transition: 0.4s ease-in-out;
+    transition: 1s ease-in-out;
     vertical-align: middle;
 }
  
 .active_arrow img {
     transform: rotate(-180deg);
-    transition: 0.4s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .arrow_black {
     margin-left: 10px;
     
 }
 .arrow_black img {
-    transition: 0.4s ease-in-out;
+    transition: 1s ease-in-out;
     vertical-align: middle;
 }
 .arrow_orange {
     margin-left: 10px;
 }
 .arrow_orange img {
-    transition: 0.4s ease-in-out;
+    transition: 1s ease-in-out;
     vertical-align: middle;
 }
 .active_acordion {
-    max-height: 600px;
-    transition: max-height 0.4s ease-in;
+    max-height: 800px;
+    transition: max-height 2s ease-in;
 }
 /* Media */
 
