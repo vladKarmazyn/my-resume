@@ -1,61 +1,49 @@
-* {
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F5F7FA;
-    }
 
+body {
+    min-height:100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, rgba(241,245,170,1) 0%, rgba(180,210,177,1) 50%, rgba(126,174,242,1) 100%);
+    }
+  
 .main-container {
+    height: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    align-items: center;
     flex-wrap: wrap-reverse;
     max-width: 1103px;
-    border: 1px solid rgb(212, 210, 210);
     margin: 0 auto;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(180,210,177,0.5);
+        height: 100px;
+    }
+    .header_list {
+        display: flex;
+    }
+    .header_list li+li {
+        margin-left: 100px;
     }
 .main-content-section {
-    background-color: #fff;
+
    
     padding: 105px 120px 105px 90px;
    }
 
    /*about me style*/
 
-.about-me {
-    margin-bottom: 40px;
 
-}
-.about-me-proffesion
-{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 20px;
- }
-.about-me-name {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 55px;
-    margin-bottom: 25px;
-}
-
-.about-descriptions {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    max-width: 400px;
-
-
-}
 .projects{
     margin-bottom: 50px;
-    border-top: 2px solid black;
+
 
 }
 .title {
@@ -63,7 +51,7 @@ body {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    color: black;
+    color:  rgb(22 50 15);
     cursor: pointer;
 }
 .project-list {
@@ -107,7 +95,7 @@ body {
 .work-expirience{
     max-width: 525px;
     margin-bottom: 45px;
-    border-top: 2px solid black;
+
 }
 .work {
     max-height: 0;
@@ -163,7 +151,7 @@ body {
     /*education section*/
 
 .education { 
-    border-top: 2px solid black;
+
 
 }
 .title-education {
@@ -205,12 +193,52 @@ body {
 }
     /* Sidebar section */
 
+
 .sidebar-section {
-    background-color: #1E2939;
-    width: 366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 40px 0;
+    margin-top: 100px;
+    width: 100%;
+}
+.sidebar-top {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.about-me {
+    padding-top: 20px;
+
+}
+.about-me-proffesion
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: rgb(22 50 15);
+    margin-bottom: 20px;
+ }
+.about-me-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 25px;
+    color: rgb(22 50 15);
 }
 
+.about-descriptions {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:  rgb(22 50 15);
+    max-width: 400px;
+
+
+}
 .contact-section,
 .tech-skill-section,
 .soft-skill-section
@@ -218,11 +246,12 @@ body {
     margin: 50px 0 0 40px;
 }
 .sidebar-title {
+    
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    color: #fff;
+    color:  rgb(22 50 15);
     margin-bottom: 10px;
     cursor: pointer;
   
