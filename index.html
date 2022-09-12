@@ -16,11 +16,11 @@
                    <!--Main content section -->
                    <header class="header">
                     <ul class="header_list">
-                        <li><a href=""> Contacts </a></li>
-                        <li><a href=""> Tech Skills</a></li>
-                        <li> <a href=""> Soft Skills</a></li>
-                        <li><a href="">Projects</a> </li>
-                        <li><a href=""> Work experience</a></li>
+                        <li><a href="#contact-section"> Contacts </a></li>
+                        <li><a href="#tech-skill-section"> Tech Skills</a></li>
+                        <li> <a href="#soft-skill-section"> Soft Skills</a></li>
+                        <li><a href="#projects">Projects</a> </li>
+                        <li><a href="#work_expirience"> Work experience</a></li>
                         <li><a href=""> Education</a></li>
                     </ul>
                    </header>
@@ -28,37 +28,22 @@
                 <!--About me section -->
                     
                     <!--My projects-->
-                    <div class="projects">
-                        <h3 class="title acordion_header" id="projects">Projects <span class="arrow_black arrows"><img src="image/arrow-down-black.svg" alt="arrow-down-black"></span></h3>
-                        <ol class="project-list acordion_item">
-                            <li class="project-item">
-                                <span class="project"> 
-                                    <a href="https://google.com" class="project-link"> https://google.com</a>
-                                ............... 
-                                <span class="project-bracket">[</span>  HTML5, CSS3 <span class="project-bracket">]</span> 
-                                </span>
-                                </li>
-                            <li class="project-item"> 
-                                <span class="project">
-                                     <a href="https://cryptohub.goit.global/" class="project-link">https://facebook.com</a>
-                                .......... <span class="project-bracket">[</span> JavaScript <span class="project-bracket">]</span>
-                                </span>
-                                </li>
-                            <li class="project-item"> 
-                                <span class="project"> 
-                                    <a href="https://kidslike.goit.global/" class="project-link">https://instagram.com</a>
-                                ........
-                                <span class="project-bracket">[</span> React.js, Node.js <span class="project-bracket">]</span> 
-                                </span>                            
-                                </li>
-                        </ol> 
+                    <div class="projects " id="projects">
+                        <h3 class="title acordion_header" >Projects <span class="arrow_black arrows"><img src="image/arrow-down-black.svg" alt="arrow-down-black"></span></h3>
+                        <div class="project-list acordion_item active_acordion">
+                           <a href="https://vladkarmazyn.github.io/homework-6.1/"> <img src="image/member-sign-in.png" width="700px" alt=""></a>
+                            <a href="https://vladkarmazyn.github.io/MNTN/"> <img src="image/mntn.png" width="700px" alt=""></a>
+                            <a href="https://vladkarmazyn.github.io/Landing-page/"> <img src="image/vpn.png" width="700px" alt=""></a>
+                            <p> More Projects</p>
+                            <a href="https://github.com/vladKarmazyn"><img src="image/github-logo-vector.svg" alt="github"></a>
+                        </div> 
                     </div>
                     <!--My work experience-->
-                    <div class="work-expirience">
+                    <div class="work-expirience" id="work_expirience">
                         
-                        <h3 class="title acordion_header" id="work_expirience">Work experience <span class="arrow_black arrows"><img src="image/arrow-down-black.svg" alt="arrow-down-black"></span></h3>
+                        <h3 class="title acordion_header" >Work experience <span class="arrow_black arrows"><img src="image/arrow-down-black.svg" alt="arrow-down-black"></span></h3>
                         <!--Company 3-->
-                        <div class="work acordion_item">
+                        <div class="work acordion_item active_acordion">
                         <div>
                             <h4 class="position acordion_header">Light-designer <span class="organization">IQ-Tech</span> <span class="arrow_orange arrows"><img src="image/arrow-down-orange .svg" alt="arrow-down-black"></span> </h4>
                             <p class="period">April 2018 - up to now <span class="line"> |</span>    Ukraine</p>
@@ -92,7 +77,7 @@
                         </div>
                     </div>
                     <!--education section-->
-                    <div class="education" >
+                    <div class="education active_acordion" >
                         <h3 class="title title-education acordion_header">Education <span class="arrow_black arrows"><img src="image/arrow-down-black.svg" alt="arrow-down-orange"></span></h3>
                             <div class="education_acordion acordion_item">
                                 <h4 class="university">Cherkasy Banking Institute </h4>
@@ -118,9 +103,9 @@
                     </div>
                     </div>
                     <!--contact section-->
-                    <div class="contact-section">
+                    <div class="contact-section" id="contact-section">
                         <h3 class="sidebar-title acordion_header" id="contact_title" >Contacts <span class="arrow arrows"> <img src="image/arrow-down.svg" alt="arrow"></span></h3>
-                    <div class="contact_list acordion_item" id="contact-list">
+                    <div class="contact_list acordion_item active_acordion" id="contact-list">
                         <div> 
                             <span class="contact-section-type">C: </span>
                             <a class="contact-section-link" href="tel:+380931477541">+38 093 147 75 41 </a>   
@@ -129,26 +114,31 @@
                             <span class="contact-section-type">E:</span>
                             <a class="contact-section-link" href="mailto:karmazynnnn@gmail.com ">karmazynnnn@gmail.com</a>
                         </div>
+                        <div class="contact-social">
+                            <a href="https://www.facebook.com/profile.php?id=100006485612714"> <img src="image/Facebook.svg" alt=""></a>
+                            <a href="https://www.instagram.com/vladkarmazyn"> <img src="image/Instagram.svg" alt=""></a>
+                            <a href="https://twitter.com/vladkarmazinn"> <img src="image/Twitter.svg" alt=""></a>
+                            
+                        </div>
                     </div>
                     </div>
                     <!--tech skill section-->
-                    <div class="tech-skill-section" >
+                    <div class="tech-skill-section" id="tech-skill-section" >
                         <h3 class="sidebar-title acordion_header" id="tech_skill">Tech Skills <span class="arrow arrows"> <img src="image/arrow-down.svg" alt="arrow"></span></h3>
-                        <ul class="tech-skill-list acordion_item">
-                        <li class="tech-skill-item"><span class="tech-skill-item-text">HTML5</span> </li>
-                        <li class="tech-skill-item"><span class="tech-skill-item-text">CSS3</span></li>
-                        <li class="tech-skill-item"><span class="tech-skill-item-text">GIT</span></li> 
-                        <li class="tech-skill-item"><span class="tech-skill-item-text">JavaScript</span></li>
-                    </ul>
+                        <div class="tech-skill-list acordion_item active_acordion">
+                        <img src="image/1.png" width="70px" alt="html">
+                        <img src="image/2.png" width="70px" alt="css">
+                        <img src="image/3.png" width="70px" alt="javascript">
+                        </div>
                     </div>
                     <!--soft skill section-->
-                    <div class="soft-skill-section">
+                    <div class="soft-skill-section" id="soft-skill-section">
                         <h3 class="sidebar-title acordion_header" id="soft-skill-list">Soft Skills <span class="arrow arrows"> <img src="image/arrow-down.svg" alt="arrow"></span></h3>
-                        <ul class="soft-skill-list acordion_item">
-                            <li class="soft-skill-item"><span class="soft-skill-item-text">Scrum</span> </li>
-                            <li class="soft-skill-item"><span class="soft-skill-item-text">Agile</span></li> 
-                            <li class="soft-skill-item"><span class="soft-skill-item-text">GTD</span></li>
-                            <li class="soft-skill-item"><span class="soft-skill-item-text">Teamwork</span></li> 
+                        <ul class="soft-skill-list acordion_item active_acordion">
+                            <li class="soft-skill-item"><span class="soft-skill-item-text">Communication</span> </li>
+                            <li class="soft-skill-item"><span class="soft-skill-item-text">Organization</span></li> 
+                            <li class="soft-skill-item"><span class="soft-skill-item-text">Creativity</span></li>
+                            <li class="soft-skill-item"><span class="soft-skill-item-text">Problem Solving</span></li> 
                         </ul>
                     </div>
                 </aside>
