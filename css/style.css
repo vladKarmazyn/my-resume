@@ -25,14 +25,14 @@ body {
         width: 100%;
         background-color: rgba(180,210,177,0.5);
         height: 70px;
-        box-shadow: 10px 5px 5px rgb(129 136 94)
+        box-shadow: 10px 5px 5px rgb(129 136 94);
     }
 .header_list {
+        width: 1100px;
         display: flex;
+        justify-content: space-between;
     }
-.header_list li+li {
-        margin-left: 100px;
-    }
+
 .header_list a {
         color:  rgb(22 50 15);
         transition: 0.2s ease;
@@ -51,6 +51,7 @@ body {
 
 
 .projects{
+    
     padding-top: 100px;
     width: 100%;
     
@@ -66,11 +67,12 @@ body {
     cursor: pointer;
 }
 .project-list {
-    padding: 20px 0;
+
     margin-top: 50px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease-in-out;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,10 +81,10 @@ body {
 .project-list img {
     border-radius: 20px;
     transition: 0.3s ease;
-    border: 2px solid rgb(75, 114, 65);
+    border: 2px solid rgb(44, 119, 25);
 }
 .project-list img:hover {
-    transform: scale(1.05);
+    box-shadow: 10px 5px 5px rgb(129 136 94);
 
 }
 .project-list p {
@@ -93,7 +95,7 @@ body {
     color: rgb(29, 29, 29);
 }
 .work-expirience{
-margin-top: 70px;
+padding-top: 100px;
 }
 .work {
     margin-top: 60px;
@@ -107,7 +109,7 @@ margin-top: 70px;
     font-size: 20px;
     line-height: 24px;
     color: rgb(22 50 15);
-    margin-bottom: 10px;
+    margin-top: 20px;
     cursor: pointer;
 
 }
@@ -139,6 +141,9 @@ margin-top: 70px;
     overflow: hidden;
     transition: max-height 1s ease-in-out;
 }
+.work-list li + li {
+    margin-top: 10px;
+}
 .work-list-item {
     font-style: normal;
     font-weight: 400;
@@ -153,6 +158,10 @@ margin-top: 70px;
 
 margin-top: 70px;
 }
+.education img {
+    border-radius: 10px;
+ 
+}
 .title-education {
     
     margin-bottom: 10px;
@@ -164,7 +173,7 @@ margin-top: 70px;
     line-height: 20px;
     color: rgb(4 101 37);
     margin-bottom: 10px;
-    margin-top: 0;
+    margin-top: 20px;
 
 }
 .departament {
@@ -182,13 +191,16 @@ margin-top: 70px;
     font-size: 12px;
     line-height: 15px;
     color: #595959;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 .education_acordion {
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease-in-out;
+}
+.education img {
+    max-width: 100%;
 }
     /* Sidebar section */
 
@@ -204,12 +216,13 @@ margin-top: 70px;
 }
 .sidebar-top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
 .about-me {
-    padding-top: 20px;
-
+    padding-top: 40px;
+    position: relative;
 }
 .about-me-proffesion
 {
@@ -226,19 +239,41 @@ margin-top: 70px;
     line-height: 55px;
     margin-bottom: 25px;
     color: rgb(22 50 15);
+
 }
 
 .about-descriptions {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
     color:  rgb(22 50 15);
     max-width: 400px;
-
+  
 
 }
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:  rgb(22 50 15);
+    border: 1px solid rgb(22 50 15);
+    border-radius: 5px;
 
+}
+.language a {
+    color: rgb(22 50 15) ;
+    transition: 0.3s ease;
+}
+.language a:hover {
+    transform: scale(1.2);
+    color: #FB6D3A;
+}
 .sidebar-title {
     
     font-style: normal;
@@ -325,9 +360,7 @@ margin-top: 70px;
 .tech-skill-list img {
     opacity: 0.4;
 }
-.tech-skill-item {
-    color: #FB6D3A;
-}
+
 .tech-skill-item-text {
     font-style: normal;
     font-weight: 400;
@@ -405,38 +438,97 @@ margin-top: 70px;
     max-height: 1500px;
     transition: max-height 2s ease-in;
 }
+
+.button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 5;
+
+}
+.burger {
+    display: block;
+    background-color: white;
+    width: 42px;
+    height: 4px;
+    border: none;
+    position: relative;
+}
+.burger::before {
+    content: '';
+    display: block;
+    width: 42px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: -10px;
+
+}
+
+.burger::after {
+    content: '';
+    display: block;
+    width: 42px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
 /* Media */
 
-@media(max-width:1122px) {
-    .sidebar-section {
-        width: 100%;
-    }
-    .tech-skill-section, .soft-skill-section, .contact-section {
+@media(max-width:773px) {
+    .about-me {
         text-align: center;
-        margin-left: auto;
-    }
-    .main-content-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 30px 20px 20px 30px;
-        text-align: center;
-    }
-    .tech-skill-list, .soft-skill-list {
-        list-style: none;
-        padding-left: 0;
-    }
-    .sidebar-title {
-        display: inline-block;
-    }
-    .sidebar-title::after {
-        right: -40%;
     }
     .about-descriptions {
-        text-align: center;
+       margin: 0 auto;
     }
-    .work-list {
-        padding-left: 17px;
+    .language {
+        right: 50%;
+        transform: translateX(50%);
+        top: 10px;
+    }
+    .projects {
+        padding: 10px;
+    }
+    .project-list img {
+        max-width: 100%;
+    }
+    .education {
+        padding: 10px;
+    }
+    
+    .header_list {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(93, 118, 87, 0.8);
+        color: #fff;
+        z-index: 2;
+        transition: right 1s ease;
+    }
+    .header_list a {
+        color: #fff;
+    }
+
+    .button {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+    .active-burger {
+        right: 0;
     }
 }
+

@@ -90,3 +90,13 @@ function acordion (acordionH, acordionI, arrow) {
 }
 
 acordion(acordionHeader, acordionItem, arrows );
+
+
+// Burger //
+const btn = document.querySelector('.button');
+const activeBurger = document.querySelector('.active-burger');
+const headerList = document.querySelector('.header_list');
+
+btn.addEventListener('click', () => {
+headerList.classList.toggle('active-burger');
+})
